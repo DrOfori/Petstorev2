@@ -1,18 +1,13 @@
 package PetStore;
 
-public class Dog {
-    private String sound;
-
-    public Dog(String name, String sound);{
-        this.sound = "Vuf";
-
-
+class Dog extends Pet {
+    public Dog(String name, String species){
+        super(name, species);
     }
 
     @Override
-    public String toString(){return "Dog: " + sound;
-
+    public void sound(){
+        System.out.println("Woof!");
     }
 
-}
 }
