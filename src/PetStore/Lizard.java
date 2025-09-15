@@ -1,9 +1,10 @@
 package PetStore;
 
-public class Lizard {
+class Lizard extends Pet{
     private String sound;
 
     public Lizard(String name, String sound);{
+        super(name, sound);
         this.sound = "Hiss";
 
 
