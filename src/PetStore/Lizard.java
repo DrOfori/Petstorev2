@@ -1,19 +1,13 @@
 package PetStore;
 
-class Lizard extends Pet{
-    private String sound;
-
-    public Lizard(String name, String sound);{
-        super(name, sound);
-        this.sound = "Hiss";
-
-
+class Lizard extends Pet {
+    public Lizard(String name, String species){
+        super(name, species);
     }
 
     @Override
-    public String toString(){return "Cat: " + sound;
-
+    public void sound(){
+        System.out.println("Hiss!");
     }
-
 
 }

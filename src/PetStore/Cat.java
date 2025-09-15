@@ -1,16 +1,14 @@
 package PetStore;
 
-class Cat extends Pet{
-    private String sound;
-
-    public Cat(String name, String sound);{
-        super(name, sound);
-        this.sound = "Meow";
-
-
+class Cat extends Pet {
+    public Cat(String name, String species){
+        super(name, species);
     }
 
-
+    @Override
+    public void sound(){
+        System.out.println("Meow!");
     }
 
+}
 
