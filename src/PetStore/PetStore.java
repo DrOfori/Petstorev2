@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class PetStore {
     public static void main(String[] args) {
-
+    welcomeMessage();
+    registerPet();
     }
 
     private static void welcomeMessage() {
@@ -21,11 +22,18 @@ public class PetStore {
     Pet[] pets = new Pet[numberOfPets];
 
     for (int i = 0; i < numberOfPets; i++) {
-        System.out.println("Enter the name pet " + (i + 1) + ": ");
+        System.out.println("Enter the name of pet #" + (i + 1) + ": ");
         String name = scanner.nextLine();
-        pets[i] = new Pet(name);
-
-
+        System.out.println("Enter the species of pet #" + (i + 1) + ": ");
+        String species = scanner.nextLine();
+        pets[i] = new Pet(name, species);
     }
+    System.out.println("--- Pets Registered ---");
+    for(Pet pet : pets) {
+    pet.getName();
+    pet.getSpecies();
+    pet.sound();
+    }
+
     }
 }
