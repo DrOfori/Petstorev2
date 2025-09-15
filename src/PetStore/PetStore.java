@@ -30,9 +30,7 @@ public class PetStore {
     }
     System.out.println("--- Pets Registered ---");
     for(Pet pet : pets) {
-    pet.getName();
-    pet.getSpecies();
-    pet.sound();
+    pet.toString();
     }
 
     }
