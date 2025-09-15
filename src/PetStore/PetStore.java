@@ -23,7 +23,8 @@ public class PetStore {
     for (int i = 0; i < numberOfPets; i++) {
         System.out.println("Enter the name pet " + (i + 1) + ": ");
         String name = scanner.nextLine();
-        pets[i] = new Pet[name];
+        pets[i] = new Pet(name);
+
 
     }
     }
