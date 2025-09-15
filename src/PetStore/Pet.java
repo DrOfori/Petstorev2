@@ -5,7 +5,7 @@ class Pet {
     protected String name;
     protected String species;
 
-    //Pet konstruktør
+    //Pet konstruktør :)
     public Pet(String name, String species) {
         this.name = name;
         this.species = species;
