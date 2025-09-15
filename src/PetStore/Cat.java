@@ -9,6 +9,10 @@ class Cat extends Pet {
     public void sound(){
         System.out.println("Meow!");
     }
+    @Override
+    public String toString(){
+        return ("Your pets name and species:\n" + name + " " + species);
+    }
 
 }
 
