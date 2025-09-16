@@ -26,23 +26,17 @@ public class PetStore {
         String name = scanner.nextLine();
         System.out.println("Enter the species of pet #" + (i + 1) + ": ");
         String species = scanner.nextLine();
-        if(species == "Dog") {
+        if(species.equalsIgnoreCase("Dog")) {
             pets[i] = new Dog(name, species);
-        } else if (species == "Lizard") {
+        } else if (species.equalsIgnoreCase("Lizard")) {
             pets[i] = new Lizard(name, species);
-        } else if (species == "Cat") {
+        } else if (species.equalsIgnoreCase("Cat")) {
             pets[i] = new Cat(name, species);
         }
     }
     System.out.println("--- Pets Registered ---");
-        if (pets instanceof Dog[]) {
-            Dog.toString();
-            Dog.sound();
-        } else if (pets instanceof Lizard[]) {
-            Lizard.toString();
-            Lizard.sound();
-        } else if (pets instanceof Cat[]) {
-            Cat.toString();
-            Cat.sound();
+       for(Pet pet : pets) {
+           System.out.println(pet);
+           pet.sound();
     }
 }}
