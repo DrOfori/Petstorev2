@@ -13,6 +13,6 @@ class Dog extends Pet {
     }
     @Override
     public String toString(){
-        return ("Your pets name and species:\n" + name + " " + species);
+        return ("Your pets name and species:\n" + name + ", " + species);
     }
 }
